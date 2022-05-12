@@ -1,0 +1,138 @@
+.inicioquemsomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .quemsomos {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--cor-fundo-cards);
+    color: var(--cor-principal);
+    border-radius: 20px;
+    border: 2px solid var(--cor-fundo-cards);
+    box-shadow: 6px 8px 5px rgb(0 0 0 / 25%);
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+  }
+  
+  .quemsomos:hover {
+    border: 2px solid var(--cor-linha-banner);
+    transform: scale(1.05);
+  }
+  
+  .quemsomos h2 {
+    font-size: 5rem;
+    font-family: "Caveat", Arial, Helvetica, sans-serif;
+    color: var(--cor-destaque);
+  }
+  
+  .quemsomos p {
+    font-size: 3rem;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .frases {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    padding: 50px;
+  }
+  
+  .fs {
+    font-family: "Oxygen", Arial, Helvetica, sans-serif;
+    width: 30%;
+    height: 300px;
+    background-color: var(--cor-fundo-cards);
+    color: var(--cor-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+    border-radius: 20px;
+    border: 2px solid var(--cor-fundo-cards);
+    box-shadow: 6px 8px 5px rgb(0 0 0 / 25%);
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+  }
+  
+  .fs:hover {
+    border: 2px solid var(--cor-linha-banner);
+    color: var(--cor-destaque);
+    transform: scale(1.05);
+  }
+  
+  .fs p{
+    padding: 10px;
+  }
+  
+  .frase1 {
+    align-self: flex-start;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+  }
+  
+  .frase1:hover {
+    transform: translateX(10%);
+  }
+  
+  .frase2 {
+    align-self: center;
+  }
+  
+  .frase3 {
+    align-self: flex-end;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+  }
+  
+  .frase3:hover {
+    transform: translateX(-10%);
+  }
+  
+  @media (max-width: 1280px) {
+    .fs {
+      width: 60%;
+      height: 200px;
+      }
+  }
+  
+  @media (max-width: 768px) {
+    .fs {
+      width: 80%;
+      height: 250px;
+      }
+  }
+  
+  @media (max-width: 428px) {
+  
+    .quemsomos{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+    .quemsomos p {
+      padding: 20px;
+    }
+    
+    .fs {
+    width: 80%;
+    height: 200px;
+    }
+  }
+  
